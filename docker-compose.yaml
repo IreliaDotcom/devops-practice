@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb+srv://dali:YV91yEDI3LlVyg1Q@cluster0.kcivo5j.mongodb.net/devops
