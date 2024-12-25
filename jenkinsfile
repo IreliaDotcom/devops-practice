@@ -1,7 +1,7 @@
 pipeline {
     environment {
         registryCredential = 'dockerhub'
-        IMAGE_NAME = 'IreliaDotcom/devops-img'
+        IMAGE_NAME = 'daliissaoui/devops-img'
         PUSH_SUCCESS = 'false'
     }
     agent any
