@@ -5,7 +5,7 @@ export const getTodos = async (req: Request, res: Response) => {
   try {
     const todos = await Todo.find();
 
-    res.status(200).json({ hello: "world" });
+    res.status(200).json({ hello: "world from copa" });
   } catch (error) {
     res.status(500).json({ error: "Error fetching todos" });
   }
