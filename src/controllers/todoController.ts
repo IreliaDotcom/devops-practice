@@ -4,7 +4,8 @@ import Todo, { ITodo } from "../models/Todo.model";
 export const getTodos = async (req: Request, res: Response) => {
   try {
     const todos = await Todo.find();
-    res.status(200).json(todos);
+
+    res.status(200).json({ hello: "world" });
   } catch (error) {
     res.status(500).json({ error: "Error fetching todos" });
   }
